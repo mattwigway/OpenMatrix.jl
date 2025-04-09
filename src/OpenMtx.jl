@@ -26,4 +26,4 @@ Base.eltype(::OpenMtx{T} where T) = T
 #  arbitrary attribute name
 
 # unindexed lookup
-Base.getindex(m::OpenMtx, idx...) = Base.getindex(m.matrix, idx)
+Base.getindex(m::OpenMtx, idx...) = Base.getindex(m.matrix, idx...)
